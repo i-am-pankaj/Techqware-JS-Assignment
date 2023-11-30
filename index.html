@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Techqware JS Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="forms">
+      <form
+        onsubmit="event.preventDefault();onFormSubmit();"
+        autocomplete="off"
+      >
+        <div>
+          <label>Student Name</label>
+          <input type="text" name="studentName" id="studentName" />
+        </div>
+        <div>
+          <label>Roll No.</label>
+          <input type="number" name="rollno" id="rollno" />
+        </div>
+        <div>
+          <label>Class</label>
+          <input type="text" name="class" id="class" />
+        </div>
+        <div>
+          <label>Interesting Subject</label>
+          <input type="text" name="subject" id="subject" />
+        </div>
+        <div class="form-action-buttons">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+    <button id="add" onclick="onAdd()">ADD</button>
+    <div id="table"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
